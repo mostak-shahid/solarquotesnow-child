@@ -18,7 +18,7 @@ define('WHITE_LABEL', false);
 
 require_once('theme-init/plugin-update-checker.php');
 $themeInit = Puc_v4_Factory::buildUpdateChecker(
-	'https://raw.githubusercontent.com/mostak-shahid/update/master/cleaningtoolspro-child.json',
+	'https://raw.githubusercontent.com/mostak-shahid/update/master/solarquotesnow-child.json',
 	__FILE__,
 	'cleaningtoolspro-child'
 );
