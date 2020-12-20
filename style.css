@@ -96,7 +96,7 @@ Version: 1.0.3
 .listing-buttons a.greenyellow,.listing-buttons button.greenyellow{
     border-color: greenyellow;
     background-color: greenyellow;
-    color: #ffffff!important; 
+    /*color: #ffffff!important; */
     
 }
 .listing-buttons a.greenyellow:hover,.listing-buttons button.greenyellow:hover{
