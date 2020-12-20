@@ -5,7 +5,7 @@ Author: Md. Mostak Shahid
 Author URI: https://www.mdmostakshahid.me/
 Description: Child Theme for Betheme
 Template: betheme
-Version: 1.0.1
+Version: 1.0.2
 */
 .mb-10{
     margin-bottom: 10px;
@@ -211,7 +211,14 @@ div.wpcr3_review div.wpcr3_review_author,div.wpcr3_review span {margin-left: 5px
     border-top: 1px solid #ccc;
     text-align: center;
 }
-.button{
+#solar-form .buttons-group{
+    display: table;
+    width: 100%;
+    padding-top: 35px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+#solar-form .button{
     display: inline-block;
     font-weight: 400;
     line-height: 1.5;
@@ -233,17 +240,17 @@ div.wpcr3_review div.wpcr3_review_author,div.wpcr3_review span {margin-left: 5px
     margin-left: 5px;
     margin-right: 5px;
 }
-.wrap{
+#solar-form .wrap{
     display: none;
 }
-.wrap.active{
+#solar-form .wrap.active{
     display: block;
     padding-top: 80px;
 }
-.wrap:last-child #solar-form .step{
+#solar-form .wrap:last-child #solar-form .step{
     text-align: left;
 }
-.address-wrap {
+#solar-form .address-wrap {
     max-width: 450px;
     margin: 0 auto;
 }
