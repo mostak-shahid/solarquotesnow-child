@@ -33,8 +33,9 @@ get_header();
                                     <div class="listing_verified_icon float-right"><i class="fa fa-check"></i></div>
                                 <?php endif;?>
                                 <?php 
-                                $mfn_builder = new Mfn_Builder_Front(get_the_ID());
-                                $mfn_builder->show();
+                                //$mfn_builder = new Mfn_Builder_Front(get_the_ID());
+                                //$mfn_builder->show();
+                                the_content();
                                 ?>
                                 <?php 
                                 $attr = 'POSTID='.get_the_ID();
