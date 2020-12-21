@@ -254,3 +254,12 @@ div.wpcr3_review div.wpcr3_review_author,div.wpcr3_review span {margin-left: 5px
     max-width: 450px;
     margin: 0 auto;
 }
+small{
+    margin-top: 10px;
+    font-size: 38%;
+    color: whitesmoke;
+    font-weight: 400;    
+}
+small.subTitle{
+    display: block;
+}
