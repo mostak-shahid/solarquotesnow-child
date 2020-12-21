@@ -129,7 +129,7 @@ function listing_search_form_func( $atts = array(), $content = '' ) {
 	), $atts, 'listing-search-form' );
     // $url = home_url( $atts['result_page'] );
     $html .= '<form class="listing_search_form" action="'.home_url( $atts['result_page'] ).'" method="get">';
-        $html .= '<input type="text" class="listing_search_input" name="search" placeholder="'.atts['placeholder'].'" />';
+        $html .= '<input type="text" class="listing_search_input" name="search" placeholder="'.$atts['placeholder'].'" />';
         $html .= '<button type="submit" class="listing_search_button">'.$atts['button_text'].'</button>';
     $html .= '</form>';
 	return $html;
