@@ -12,7 +12,11 @@ jQuery(document).ready(function($){
         $(this).parent().siblings('.listing-desc').css('height','45px');
     });*/
     $('.listing-buttons').find('[type=image]').hide();
-    $('.listing-buttons').find('form').append('<button type="submit" class="btn-block btn-request greenyellow">Business Claim</button>');
+    $('.listing-buttons').find('form').append('<button type="submit" class="btn-block btn-business-claim greenyellow">Business Claim</button>');
+    /*$('.btn-business-claim').on('click',function(){
+        alert(0);
+    });*/
+    $('.radio-inline').find('label').append('<div class="check"></div>');
 
     
     $( "#form-dialog" ).dialog({

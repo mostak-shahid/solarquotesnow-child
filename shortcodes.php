@@ -329,16 +329,16 @@ function listing_form_func( $atts = array(), $content = '' ) {
                     <div class="form-group ">
                         <label class="control-label">Property Type</label>
                         <div class="radio-inline">
-                            <label><input type="radio" id="rentPropertyType" name="rentPropertyType" value="House"><span>House</span></label>
-                            <label><input type="radio" id="rentPropertyType" name="rentPropertyType" value="Apartment (Strata)"><span>Apartment (Strata)</span></label>
+                            <label><input type="radio" id="rentPropertyType-1" name="rentPropertyType" value="House"><span>House</span></label>
+                            <label><input type="radio" id="rentPropertyType-2" name="rentPropertyType" value="Apartment (Strata)"><span>Apartment (Strata)</span></label>
                         </div>
                         <p class="help-block help-block-error"></p>
                     </div>
                     <div class="form-group">
                         <label class="control-label">Do you rent your property direct from the owner?</label>
                         <div class="radio-inline">
-                            <label><input type="radio" id="rentFrom" name="rentFrom" value="Yes"><span>Yes</span></label>
-                            <label><input type="radio" id="rentFrom" name="rentFrom" value="No – I rent through an agency"><span>No – via agency</span></label>
+                            <label><input type="radio" id="rentFrom-1" name="rentFrom" value="Yes"><span>Yes</span></label>
+                            <label><input type="radio" id="rentFrom-2" name="rentFrom" value="No – I rent through an agency"><span>No – via agency</span></label>
                         </div>
                     </div>
                 </div>
@@ -346,8 +346,8 @@ function listing_form_func( $atts = array(), $content = '' ) {
                     <div class="form-group field-solarform-buildstage has-success">
                         <label class="control-label">What stage are you at in the building process?</label>
                         <div class="radio-inline">
-                            <label><input type="radio" id="buildStage" name="buildStage" value="Less than 3 mths until completion"><span>Less than 3 mths until completion</span></label>
-                            <label><input type="radio" id="buildStage" name="buildStage" value="More than 3 mths to completion"><span>More than 3 mths to completion</span></label>
+                            <label><input type="radio" id="buildStage-1" name="buildStage" value="Less than 3 mths until completion"><span>Less than 3 mths until completion</span></label>
+                            <label><input type="radio" id="buildStage-2" name="buildStage" value="More than 3 mths to completion"><span>More than 3 mths to completion</span></label>
                         </div>
                     </div>
                 </div>
@@ -355,9 +355,9 @@ function listing_form_func( $atts = array(), $content = '' ) {
                     <div class="form-group">
                         <label class="control-label">What stage are you at in the purchasing process?</label>
                         <div class="radio-inline">
-                            <label><input type="radio" id="purchaseStage" name="purchaseStage" value="Within 6 wks"><span>Within 6 wks</span></label>
-                            <label><input type="radio" id="purchaseStage" name="purchaseStage" value="Within 6 - 12 wks"><span>Within 6 - 12 wks</span></label>
-                            <label><input type="radio" id="purchaseStage" name="purchaseStage" value="More than 12 wks"><span>More than 12 wks</span></label>
+                            <label><input type="radio" id="purchaseStage-1" name="purchaseStage" value="Within 6 wks"><span>Within 6 wks</span></label>
+                            <label><input type="radio" id="purchaseStage-2" name="purchaseStage" value="Within 6 - 12 wks"><span>Within 6 - 12 wks</span></label>
+                            <label><input type="radio" id="purchaseStage-3" name="purchaseStage" value="More than 12 wks"><span>More than 12 wks</span></label>
                         </div>
                     </div>
                 </div>
@@ -365,8 +365,8 @@ function listing_form_func( $atts = array(), $content = '' ) {
                     <div class="form-group">
                         <label class="control-label">Do you have an existing solar system?</label>
                         <div class="radio-inline">
-                            <label><input type="radio" id="existingSystemYesNo" name="existingSystemYesNo" value="No"><span>No</span></label>
-                            <label><input type="radio" id="existingSystemYesNo" name="existingSystemYesNo" value="Yes"><span>Yes</span></label>
+                            <label><input type="radio" id="existingSystemYesNo-1" name="existingSystemYesNo" value="No"><span>No</span></label>
+                            <label><input type="radio" id="existingSystemYesNo-2" name="existingSystemYesNo" value="Yes"><span>Yes</span></label>
                         </div>
                         <div class="help-block">Please specify your existing solar system</div>
                     </div>    
@@ -433,7 +433,7 @@ function listing_form_func( $atts = array(), $content = '' ) {
             <div id="step-7" class="step step-7" style="text-align: left">
                 <div class="address-wrap">
                     <div class="form-group required-input">
-                        <label class="control-label text-center">What is your address?</label>
+                        <label class="control-label text-center">Your Project details.</label>
                         <strong>Full Name</strong>
                         <input type="text" id="solarform-fullname" class="form-control" name="fullName" value="" placeholder="eg. Paul Smith" required>
                         <div class="help-block">Full Name cannot be blank.</div>
@@ -449,20 +449,20 @@ function listing_form_func( $atts = array(), $content = '' ) {
                         <input type="text" id="phone" class="form-control" name="phone" value="" placeholder="Best Contact Number (incl. area code)" required>
                         <p class="help-block">Please provide a phone number</p>
                     </div>
-                    <div class="form-group" id="alt-phone" style="display: none;">
+                    <!--<div class="form-group" id="alt-phone" style="display: none;">
                         <strong>Alt. Phone</strong>
                         <input type="text" id="mobile" class="form-control" name="mobile" value="" placeholder="Alternative Contact Number">
                     </div>
                     <div class="form-group">
                         <input type="checkbox" id="alt-phone-trigger" class="form-check-input" name="isAlternatePhone" value="1">
                         <label for="alt-phone-trigger"><b>I would like to add</b> an alternative phone number</label>
-                    </div>
+                    </div>-->
                     <div class="form-group required-input">
                         <strong>Address</strong>
-                        <input type="text" id="address" class="form-control" name="fullAddress" placeholder="Enter your full address" required>
+                        <input type="text" id="address" class="form-control" name="fullAddress" placeholder="Suburb, State-Zipcode" required>
                         <p class="help-block">Address cannot be blank.</p>
                     </div>            
-                    <div class="form-group required-input">
+                    <!--<div class="form-group required-input">
                         <strong>Suburb</strong>
                         <input type="text" id="suburb" class="form-control" name="suburb" value="" placeholder="Suburb" required>
                         <p class="help-block">Suburb can\'t be blank</p>
@@ -476,6 +476,11 @@ function listing_form_func( $atts = array(), $content = '' ) {
                         <strong>Postcode</strong>
                         <input type="text" id="postcode" class="form-control" name="postcode" value="" placeholder="Postcode" required>
                         <p class="help-block">Postcode can\'t be blank</p>
+                    </div>-->
+                    
+                    <div class="form-group">
+                        <input type="checkbox" class="form-check-input" name="agree" id="agree" value="1">
+                        <label for="agree">I agree to share my personal information with <?php echo get_bloginfo( 'name' ) ?></label>
                     </div>
                 </div>
                 <div class="buttons-group">
