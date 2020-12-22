@@ -135,5 +135,5 @@ get_header();
 
 	</div>
 </div>
-
+<div style="margin-bottom:30px"></div>
 <?php get_footer();
