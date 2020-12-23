@@ -23,7 +23,7 @@ function shortcodes_page(){
         <li>[copyright-symbol] <span class="sdetagils">displays copyright symbol</span></li>
         <li>[this-year] <span class="sdetagils">displays 4 digit current year</span></li>
         <li>[feature-image wrapper_element='div' wrapper_atts='' height='' width=''] <span class="sdetagils">displays feature image</span></li>
-        <li>[listing-search-form result_page='' button_text='Search' placeholder=''] <span class="sdetagils">displays listing search form</span></li>
+        <li>[listing-search-form result_page='' button_text='Search' input_id='' placeholder=''] <span class="sdetagils">displays listing search form</span></li>
         <li>[listing-search-result posts_per_page='10'] <span class="sdetagils">displays listing search results</span></li>
         <li>[listing-search-verify] <span class="sdetagils">displays nothing</span></li>
     </ol>
@@ -125,11 +125,12 @@ function listing_search_form_func( $atts = array(), $content = '' ) {
 	$atts = shortcode_atts( array(
 		'result_page' => '',
         'button_text' => 'Search',
+        'input_id' => '',
         'placeholder' => ''
 	), $atts, 'listing-search-form' );
     // $url = home_url( $atts['result_page'] );
     $html .= '<form class="listing_search_form" action="'.home_url( $atts['result_page'] ).'" method="get">';
-        $html .= '<input type="text" class="listing_search_input" name="search" placeholder="'.$atts['placeholder'].'" />';
+        $html .= '<input id="'.$atts['input_id'].'" type="text" class="listing_search_input" name="search" placeholder="'.$atts['placeholder'].'" />';
         $html .= '<button type="submit" class="listing_search_button">'.$atts['button_text'].'</button>';
     $html .= '</form>';
 	return $html;
