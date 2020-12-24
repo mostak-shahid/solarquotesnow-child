@@ -174,4 +174,6 @@ function initAutocomplete(){
             fields: ['place_id','geometry','name']
         }
     );
-}*/
+}
+https://www.youtube.com/watch?v=c3MjU9E9buQ
+*/
