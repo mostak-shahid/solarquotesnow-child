@@ -164,7 +164,7 @@ jQuery(document).ready(function($){
     });
 
 });
-let autocomplete;
+/*let autocomplete;
 function initAutocomplete(){
     autocomplete = new google.maps.place.Autocomplete(
         document.getElementById('autocomplete'),
@@ -174,4 +174,4 @@ function initAutocomplete(){
             fields: ['place_id','geometry','name']
         }
     );
-}
+}*/
