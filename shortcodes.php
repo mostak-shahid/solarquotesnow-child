@@ -26,6 +26,7 @@ function shortcodes_page(){
         <li>[listing-search-form result_page='' button_text='Search' input_id='' placeholder=''] <span class="sdetagils">displays listing search form</span></li>
         <li>[listing-search-result posts_per_page='10'] <span class="sdetagils">displays listing search results</span></li>
         <li>[listing-search-verify] <span class="sdetagils">displays nothing</span></li>
+        <li>[listing-form] <span class="sdetagils">displays quote form</span></li>
     </ol>
 </div>
 <?php
