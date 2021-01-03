@@ -5,7 +5,7 @@ Author: Md. Mostak Shahid
 Author URI: https://www.mdmostakshahid.me/
 Description: Child Theme for Betheme
 Template: betheme
-Version: 1.0.6
+Version: 1.0.7
 */
 .mb-10{
     margin-bottom: 10px;
@@ -317,6 +317,7 @@ small.subTitle{
     border: 1px solid #93c800;
     padding-left: 5px;
     padding-right: 5px;
+    text-decoration: none;
 }
 .nav-links .page-numbers.current {
     background-color: #93c800;

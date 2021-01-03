@@ -497,7 +497,8 @@ function listing_form_func( $atts = array(), $content = '' ) {
         ?>
         <input type="hidden" name="title" value="<?php echo $title ?>">
         <?php wp_nonce_field( 'quote_form_action', 'quote_form_field' );?>
-    </form>    
+    </form> 
+    <div style="min-height:80vh"></div>   
     <?php
     $html = ob_get_clean();
     
